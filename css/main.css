@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
 body{
   font-family: 'Barlow', sans-serif;
   padding: 0;
@@ -55,9 +60,11 @@ h4{
 .main-nav a:hover{
   color: #cc8bad;
 }
+/*
 .main-nav a:visited{
   color: #909090;
 }
+*/
 .css-selector{
   width: 99%;
   margin-top:2em;
@@ -97,18 +104,14 @@ h4{
   display:flex;
   align-items: flex-start;
 }
-.box1{
-  flex:1;
-}
-.box2{
-  flex:2;
-}
+
 .h2-border{
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-color: #7469b8;
   margin-left: 0;
-  width:15em;
+  width:25%;
+  margin-bottom: 30px;
 }
 .in-text-link{
   text-decoration: none;
@@ -117,9 +120,11 @@ h4{
 .in-text-link:hover{
   color: #cc8bad;
 }
+/*
 .in-text-link:visited{
   color: #909090;
 }
+*/
 /*https://css-tricks.com/solved-with-css-dropdown-menus/*/
 .nav-link{
   margin-bottom: 9em;
@@ -164,9 +169,11 @@ h4{
 .nav-link a:hover{
   color: #cc8bad;
 }
+/*
 .nav-link a:visited{
   color: #909090;
 }
+*/
 input[type="button"]{
   background-color: #655ba0;
   color: #f9f6ef;
@@ -298,21 +305,7 @@ input[type="button"]:active{
 .nav-box ul li{
   padding-right: 3.5em;
 }
-/*https://css-tricks.com/designing-a-product-page-layout-with-flexbox/*/
-.products{
-  display:flex;
-  flex-wrap:wrap;
-}
-.product-card {
-  padding: 2%;
-  flex: 1 16%;
-}
-.product-image img {
-  max-width: 100%;
-}
-.product-info {
-  margin-top: auto;
-}
+
 .image-flip{
   width: 200px;
   height: 260px;
@@ -331,126 +324,11 @@ input[type="button"]:active{
   display: inline;
   transition: .5s ease;
 }
-.product-link a{
-  text-decoration: none;
-  color: rgb(90,90,90);
-}
-/*https://stackoverflow.com/questions/1734618/how-to-increase-the-gap-between-text-and-underlining-in-css/37622323#targetText=The%20problem%20with%20using%20border,don't%20have%20complete%20control.&targetText=By%20changing%20the%20bottom%20property,exactly%20where%20you%20want%20it.*/
-.product-link a:hover{
-  text-decoration: none;
-  border-width: 0 0 1px;
-  border-style: solid;
-}
 
-.product-link p{
-  margin-top: 0;
-}
-.payment-form{
-  margin-bottom: 8px;
-}
-.column-labels{
-  display:flex;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-color: rgb(90,90,90);
-  margin-left: 0;
-  width:100%;
-}
-.product{
-  display:flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top: 8px;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-color: rgb(90,90,90);
-  margin-left: 0;
-  width:100%;
-
-}
-.product-image{
-  flex:2;
-}
-.product-details{
-  flex:3;
-}
-.product-price{
-  flex:2;
-}
-.product-quantity{
-  flex:2;
-}
-.product-line-price{
-  flex:2;
-}
-.product-removal{
-  flex:1;
-}
-
-.quantity {
-  position: relative;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button
-{
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type=number]
-{
-  -moz-appearance: textfield;
-}
-
-.quantity input {
-  width: 40px;
-  height: 30px;
-  padding: 0;
-  margin: 0;
-  padding-left: 25px;
-  border: 1px solid #eee;
-}
-
-.quantity input:focus {
-  outline: 0;
-}
-
-.product-list{
-  display:flex;
-}
 #Basic_Branding_Ideas{
   margin-top: 60px;
 }
-.totals-item{
-  display: flex;
-  justify-content: flex-end;
-}
 
-#cart-subtotal{
-  padding-left: 80px;
-}
-#cart-gst{
-  padding-left: 86px;
-}
-#cart-pst{
-  padding-left: 86px;
-}
-#cart-shipping{
-  padding-left: 80px;
-}
-.totals-item-total label{
-  font-size: 20px;
-  color: #655ba0;
-  padding-top: 15px;
-  padding-left: 30px;
-}
-#cart-total{
-  font-size: 20px;
-  color: #655ba0;
-  padding-top: 15px;
-  padding-left: 80px;
-}
 .proceed{
   padding-top: 15px;
   display:flex;
@@ -484,8 +362,22 @@ input[type=number]
   padding-top: 0;
 }
 .font h4{
-  color:rgb(90,90,90);
+  color:#000;
 }
+.navigation{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 100vw;
+  height: 100vh;
+}
+.box1{
+  grid-column: 1/2;
+  grid-row: 3;
+  text-align: center;
+  background-color: #000;
+}
+
 /*https://www.youtube.com/watch?v=RKL9Nkf1_N8*/
 @media screen and (max-width: 1024px) {
   .main-nav ul{
