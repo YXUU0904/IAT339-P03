@@ -1,0 +1,629 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  color:rgb(90,90,90);
+  line-height: 1.6em;
+}
+
+header{
+  background:#f9f6ef;
+  color:#fff;
+}
+
+h1{
+  color: #546d5a;
+  font-size:32px;
+}
+h2{
+  color: #5f7b66;
+  font-size:26px;
+}
+h3{
+  color: #6a8a72;
+  font-size:21px;
+}
+h4{
+  color: #77967f;
+  font-size:17px;
+}
+
+/*https://www.youtube.com/watch?v=Wm6CUkswsNw*/
+.container{
+  width:80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.main-nav ul{
+  display:flex;
+  list-style: none;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  padding-left: 0;
+}
+
+.main-nav ul li{
+  padding-right: 2em;
+}
+.main-nav a{
+  text-decoration: none;
+  color: #546d5a;
+}
+/*https://stackoverflow.com/questions/1734618/how-to-increase-the-gap-between-text-and-underlining-in-css/37622323#targetText=The%20problem%20with%20using%20border,don't%20have%20complete%20control.&targetText=By%20changing%20the%20bottom%20property,exactly%20where%20you%20want%20it.*/
+.main-nav a:hover{
+  text-decoration: none;
+  border-width: 0 0 1px;
+  border-style: solid;
+}
+.main-nav a:visited{
+  color: #907e6e;
+}
+.css-selector{
+  border: solid;
+  border-width: 1px;
+  border-color:#546d5a;
+  width: 99%;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+.css-selector h4{
+  margin-top:0.5em;
+  margin-bottom:0;
+}
+.css-selector p{
+  margin-top: 0;
+}
+.sample-code{
+  border: solid;
+  border-width: 1px;
+  background-color: #546d5a;
+  color: #ffffff;
+  padding:0;
+}
+
+#introduction{
+  /*https://www.w3schools.com/cssref/css3_pr_background-size.asp*/
+  /*https://www.pexels.com/photo/green-pine-trees-covered-with-fogs-under-white-sky-during-daytime-167699/*/
+  background:url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: left;
+  color:#fff;
+  padding-top: 10em;
+  padding-bottom: 10em;
+  margin-bottom: 1em;
+}
+
+#introduction h1{
+  color: #fff;
+}
+/*iat339 Week3 Lecture Notes*/
+#introduction .container{
+  display:flex;
+  align-items: flex-start;
+}
+.box1{
+  flex:1;
+}
+.box2{
+  flex:2;
+}
+.h2-border{
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #5f7b66;
+  margin-left: 0;
+  width:32em;
+}
+.in-text-link{
+  text-decoration: none;
+  border-width: 0 0 1px;
+  border-style: dashed;
+  color: #546d5a;
+}
+.in-text-link:hover{
+  text-decoration: none;
+  border-width: 0 0 1px;
+  border-style: solid;
+}
+.in-text-link:visited{
+  color: #907e6e;
+}
+/*https://css-tricks.com/solved-with-css-dropdown-menus/*/
+.nav-link{
+  margin-bottom: 9em;
+}
+.nav-link ul{
+  list-style: none;
+  padding-left: 0;
+}
+.nav-link li{
+  display:block;
+  float:left;
+  transition-duration: 0.5s;
+}
+.nav-link li:hover {
+  cursor: pointer;
+}
+.nav-link ul li ul {
+  font-size: 14px;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  padding-top: 0.5rem;
+  transition: all 0.5s ease;
+  display: none;
+}
+
+.nav-link ul li:hover > ul, ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.nav-link ul li ul li {
+  clear: both;
+  width: 100%;
+}
+.nav-link a{
+  text-decoration: none;
+  color: #546d5a;
+}
+.nav-link a:hover{
+  text-decoration: none;
+  border-width: 0 0 1px;
+  border-style: solid;
+}
+.nav-link a:visited{
+  color: #907e6e;
+}
+input[type="button"]{
+  background-color: #546d5a;
+  color: #f9f6ef;
+  padding: 5px 16px;
+  border: none;
+  outline:none;
+}
+input[type="button"]:hover{
+  background-color: #3a4c3f;
+}
+input[type="button"]:active{
+  background-color: #212b23;
+}
+/*https://codepen.io/lihs/pen/MEvzxr*/
+#first-name-input[type="text"]{
+  border: 1px solid #909090;
+  display:block;
+  opacity: 0.5;
+  width:32em;
+  margin-bottom: 20px;
+}
+#first-name-input[type="text"]:focus{
+  outline: none;
+  border: 2px solid #546d5a;
+  color: #546d5a;
+  width:32em;
+}
+#last-name-input[type="text"]{
+  border: 1px solid #909090;
+  display:block;
+  opacity: 0.5;
+  width:32em;
+  margin-bottom: 20px;
+}
+#last-name-input[type="text"]:focus{
+  outline: none;
+  border: 2px solid #546d5a;
+  color: #546d5a;
+  width:32em;
+}
+.my-form textarea{
+  padding-bottom: 50px;
+  border: 1px solid #909090;
+  display:block;
+  opacity: 0.5;
+  width:32em;
+}
+.my-form textarea:focus{
+  outline: none;
+  border: 2px solid #546d5a;
+  color: #546d5a;
+  width:32em;
+}
+.overlay a:hover{
+  opacity: 0.3;
+  transition: .5s ease;
+}
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio*/
+.radiobutton{
+ display: block;
+ position: relative;
+ padding-left: 35px;
+ margin-bottom: 12px;
+ cursor: pointer;
+ font-size: 16px;
+}
+.radiobutton input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.radiobutton:hover input ~ .checkmark{
+  background-color: #ccc;
+}
+.radiobutton input:checked ~ .checkmark{
+  background-color: #546d5a;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radiobutton input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radiobutton .checkmark:after {
+ 	top: 6px;
+	left: 6px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #546d5a;
+}
+#interactive_elements img{
+  width:98%;
+}
+.text-elements-title{
+  padding-top: 50px;
+}
+#text_elements span{
+  font-size:16px;
+  float:right;
+}
+
+.element ol li{
+  padding-left: 10px;
+}
+.combined-elements-title{
+  padding-top: 50px;
+}
+
+.nav-box{
+  display:flex;
+  border: solid;
+  border-width: 1px;
+  border-color:#f9f6ef;
+  background: #f9f6ef;
+}
+.nav-box ul li{
+  padding-right: 3.5em;
+}
+/*https://css-tricks.com/designing-a-product-page-layout-with-flexbox/*/
+.products{
+  display:flex;
+  flex-wrap:wrap;
+}
+.product-card {
+  padding: 2%;
+  flex: 1 16%;
+}
+.product-image img {
+  max-width: 100%;
+}
+.product-info {
+  margin-top: auto;
+}
+.image-flip{
+  width: 200px;
+  height: 260px;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+.image-flip .image-top{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.image-flip:hover .image-top {
+  display: inline;
+  transition: .5s ease;
+}
+.product-link a{
+  text-decoration: none;
+  color: rgb(90,90,90);
+}
+/*https://stackoverflow.com/questions/1734618/how-to-increase-the-gap-between-text-and-underlining-in-css/37622323#targetText=The%20problem%20with%20using%20border,don't%20have%20complete%20control.&targetText=By%20changing%20the%20bottom%20property,exactly%20where%20you%20want%20it.*/
+.product-link a:hover{
+  text-decoration: none;
+  border-width: 0 0 1px;
+  border-style: solid;
+}
+
+.product-link p{
+  margin-top: 0;
+}
+.payment-form{
+  margin-bottom: 8px;
+}
+.column-labels{
+  display:flex;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: rgb(90,90,90);
+  margin-left: 0;
+  width:100%;
+}
+.product{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: rgb(90,90,90);
+  margin-left: 0;
+  width:100%;
+
+}
+.product-image{
+  flex:2;
+}
+.product-details{
+  flex:3;
+}
+.product-price{
+  flex:2;
+}
+.product-quantity{
+  flex:2;
+}
+.product-line-price{
+  flex:2;
+}
+.product-removal{
+  flex:1;
+}
+
+.quantity {
+  position: relative;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  width: 40px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  padding-left: 25px;
+  border: 1px solid #eee;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.product-list{
+  display:flex;
+}
+#Basic_Branding_Ideas{
+  margin-top: 60px;
+}
+.totals-item{
+  display: flex;
+  justify-content: flex-end;
+}
+
+#cart-subtotal{
+  padding-left: 80px;
+}
+#cart-gst{
+  padding-left: 86px;
+}
+#cart-pst{
+  padding-left: 86px;
+}
+#cart-shipping{
+  padding-left: 80px;
+}
+.totals-item-total label{
+  font-size: 20px;
+  color: #546d5a;
+  padding-top: 15px;
+  padding-left: 30px;
+}
+#cart-total{
+  font-size: 20px;
+  color: #546d5a;
+  padding-top: 15px;
+  padding-left: 80px;
+}
+.proceed{
+  padding-top: 15px;
+  display:flex;
+  justify-content: flex-end;
+}
+
+.colour-box img{
+  max-width: 13%;
+  height: auto;
+}
+.potential-image img{
+  max-width: 50%;
+  height:auto;
+}
+#Brand_Components{
+  margin-top: 60px;
+}
+
+#citations{
+  background:#fffaf7;
+  color:#9b9fa5;
+  margin-top: 30px;
+}
+#citations ul{
+  list-style: none;
+  padding-left:0;
+  margin-bottom: 30px;
+}
+#citations li{
+  display: block;
+  padding-top: 0;
+}
+.font h4{
+  color:rgb(90,90,90);
+}
+/*https://www.youtube.com/watch?v=RKL9Nkf1_N8*/
+@media screen and (max-width: 1024px) {
+  .main-nav ul{
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .main-nav ul li {
+    text-align: center;
+    margin-bottom: 1em;
+    width:100%;
+  }
+  .nav-box{
+    justify-content: center;
+  }
+  .nav-box ul{
+    flex-direction: column;
+  }
+  .nav-box ul li {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .nav-box ul li ul li{
+    display: none;
+  }
+  .nav-link{
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 645px) {
+  .h2-border{
+    width:99%;
+  }
+  #first-name-input[type="text"]{
+    width:98%;
+  }
+  #first-name-input[type="text"]:focus{
+    width:98%;
+  }
+  #last-name-input[type="text"]{
+    width:98%;
+  }
+  #last-name-input[type="text"]:focus{
+    width:98%;
+  }
+  .my-form textarea{
+    width:98%;
+  }
+  .my-form textarea:focus{
+    width:98%;
+  }
+  .colour-box img{
+    max-width: 20%;
+    height: auto;
+  }
+  .potential-image img{
+    max-width: 100%;
+    height:auto;
+  }
+}
+@media screen and (min-width: 750px){
+  #interactive_elements img{
+    width:50%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .product-card {
+    flex: 1 21%;
+  }
+}
+@media screen and (max-width: 551px) {
+  .product-card {
+    padding-left: 20%;
+    flex: 1 21%;
+  }
+}
+@media screen and (max-width: 670px) {
+
+  .shopping-cart{
+    margin: 0;
+    padding-top: 20px;
+  }
+
+  .column-labels {
+    display: none;
+  }
+  .product{
+    padding-bottom: 50px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: rgb(90,90,90);
+    margin-left: 0;
+    width:100%;
+  }
+
+#checkout-cart .product-image{
+    display: none;
+  }
+
+  .product-price{
+    display:none;
+  }
+
+  .product-details{
+    flex:4;
+  }
+  .product-quantity{
+    flex:2;
+  }
+
+  .quantity input {
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    padding-left: 15px;
+    border: 1px solid #eee;
+  }
+
+  .product-line-price{
+    flex:3;
+  }
+  .product-removal{
+    flex:1;
+  }
+
+}

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Style Guide</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+    <!-- https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file -->
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+    </style>
+  </head>
+
+
+  <body>
+    <!-- https://flexbox.ninja/demos/website-header/ -->
+    <header>
+     <div class="container">
+      <h1>Style Guide</h1>
+       <nav class="main-nav">
+         <ul>
+           <li><a href="#interactive_elements">Interactive Elements</a></li>
+           <li><a href="#text_elements">Text Elements</a></li>
+           <li><a href="#combined_elements">Combined Elements</a></li>
+           <li><a href="product_listing.html">Product Listing</a></li>
+           <li><a href="checkout.html">Checkout</a></li>
+           <li><a href="#citations">Citations</a></li>
+         </ul>
+       </nav>
+      </div>
+    </header>
+
+    <section id="introduction">
+      <div class="container">
+        <div class="box1">
+          <h1>Tree.</h1>
+        </div>
+        <!-- https://www.yelp.com/styleguide -->
+        <div class="box2">
+          <p>Welcome to Tree Stationary. The styleguide is a resource for designers, product managers, and
+            developers, providing a common language around our UI patterns. We
+            use it to maintain modular front-end code and visual consistency across
+            the web app. </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <div class="container">
+        <div class="h2-border">
+      <h2>Interactive Elements</h2>
+    </div>
+        <h3>In-text link</h3>
+        <!--http://greenieguide.com/best-eco-friendly-journals/-->
+        <p> This is an <a href="#" class="in-text-link">in-text link</a>.</p>
+        <div class="css-selector">
+        <h4>CSS selector</h4>
+        <p>.in-text-link</p>
+        <h4>Sample code</h4>
+          <div class="sample-code">
+        <!-- IAT339 P1-Style_Guide_Template -->
+        <code>
+        &lt;a href="#" class="in-text-link">in-text link&lt;/a&gt;
+      </code>
+    </div>
+        </div>
+        </div>
+
+      <!-- Default Button styling section -->
+      <div class="container">
+        <section class="nav-link">
+        <h3>Navigation Link</h3>
+      <!-- https://css-tricks.com/solved-with-css-dropdown-menus/ -->
+        <nav>
+          <ul>
+            <li><a href="#">SHOP</a>
+          <ul>
+          <li><a href="#">NOTEBOOKS</a></li>
+          <li><a href="#">PLANNERS</a></li>
+          <li><a href="#">OTHERS</a></li>
+        </ul>
+        </li>
+      </ul>
+    </nav>
+    </section>
+    <div class="css-selector">
+    <h4>CSS selector</h4>
+    <p>.nav-link</p>
+    <h4>Sample code</h4>
+      <div class="sample-code">
+    <!-- IAT339 P1-Style_Guide_Template -->
+    <code>
+        &lt;section id="nav-link&gt;<br>
+      <!-- https://www.computerhope.com/issues/ch001662.htm#targetText=To%20create%20extra%20spaces%20before,following%20code%20in%20our%20HTML.&targetText=If%20you%20are%20using%20a,or%20editing%20the%20HTML%20code. -->
+        &nbsp;&lt;nav&gt;<br>
+        &nbsp;&nbsp;&lt;ul&gt;<br>
+        &nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#">SHOP&lt;/a&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#">NOTEBOOKS&lt;/a&gt;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+        &nbsp;&nbsp;&lt;/ul&gt;<br>
+        &nbsp;&lt;/nav&gt;<br>
+        &lt;/section&gt;<br>
+    </code>
+  </div>
+    </div>
+    </div>
+
+      <div class="container">
+        <h3>Submit/Reset Buttons</h3>
+        <input type="button" value = "Submit">
+        <div class="css-selector">
+        <h4>CSS selector</h4>
+        <p>input[type="button"]</p>
+        <h4>Sample code</h4>
+          <div class="sample-code">
+        <!-- IAT339 P1-Style_Guide_Template -->
+        <code>
+            &lt;input type="button" value = "Submit&gt;<br>
+        </code>
+      </div>
+        </div>
+      </div>
+
+      <form class="my-form">
+        <div class="container">
+        <h3>Text Input Field with Label</h3>
+        <div>
+        <label for="first-name-input">First Name</label>
+        <input id="first-name-input" type="text" name="first-name">
+      </div>
+        <div>
+        <label for="last-name-input">Last Name</label>
+        <input id="last-name-input" type="text" name="last-name">
+        <div class="css-selector">
+        <h4>CSS selector</h4>
+        <p>#first-name-input[type="text"]</p>
+        <h4>Sample code</h4>
+          <div class="sample-code">
+        <!-- IAT339 P1-Style_Guide_Template -->
+        <code>
+            &lt;label for="first-name-input">First Name&lt;/label&gt;<br>
+            &lt;input id="firstname-input" type="text" name="first-name"&gt;
+        </code>
+      </div>
+        </div>
+        </div>
+        <div>
+          <label for="text-area">Message</label>
+          <textarea id="text-area" name="message"></textarea>
+          <div class="css-selector">
+          <h4>CSS selector</h4>
+          <p>.my-form textarea</p>
+          <h4>Sample code</h4>
+            <div class="sample-code">
+          <!-- IAT339 P1-Style_Guide_Template -->
+          <code>
+              &lt;label for="text-area">Message&lt;/label&gt;<br>
+              &lt;textarea id="text-area" name="message"&gt;&lt;/textarea&gt;
+          </code>
+        </div>
+          </div>
+      </div>
+    </div>
+    </form>
+
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio -->
+  <div class="container">
+        <h3>Radio Button with Label</h3>
+        <label class="radiobutton">Choice 1
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="radiobutton">Choice 2
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <div class="css-selector">
+        <h4>CSS selector</h4>
+        <p>.radiobutton, .checkmark</p>
+        <h4>Sample code</h4>
+          <div class="sample-code">
+        <!-- IAT339 P1-Style_Guide_Template -->
+        <code>
+            &lt;label class="radiobutton"&gt;Choice 1<br>
+            &nbsp;&lt;input type="radio" checked="checked" name="radio"&gt;<br>
+            &nbsp;&lt;span class="checkmark">&lt;/span&gt;<br>
+            &lt;/label&gt;
+        </code>
+      </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h3>Image as a Link</h3>
+        <div class="overlay">
+        <!-- https://www.presentandcorrect.com/collections/notes/products/1-2-sketch-book-->
+        <a href="https://www.presentandcorrect.com/collections/notes/products/calendar-stencil-set">
+          <img src="images/image.jpg"  alt="green card"></a>
+        </div>
+        <div class="css-selector">
+        <h4>CSS selector</h4>
+        <p>.overlay</p>
+        <h4>Sample code</h4>
+          <div class="sample-code">
+        <!-- IAT339 P1-Style_Guide_Template -->
+        <code>
+            &lt;div class="overlay"&gt;<br>
+            &nbsp;&lt;a href="#"&gt;&lt;img src="images/image.jpg"  alt="green card"&gt;&lt;/a&gt;<br>
+            &lt;/div&gt;
+        </code>
+      </div>
+        </div>
+      </div>
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <div class="container">
+        <div class="h2-border">
+        <h2>Text Elements</h2>
+      </div>
+        <h3>Headings</h3>
+        <h1>Heading 1<span>32px</span></h1>
+        <h2>Heading 2<span>26px</span></h2>
+        <h3>Heading 3<span>21px</span></h3>
+        <h4>Heading 4<span>17px</span></h4>
+
+        <div class="css-selector">
+        <h4>Css selector</h4>
+        <p>#text_elements, .h2-border, h1, h2, h3, h4, span</p>
+        <h4>Sample code</h4>
+          <div class="sample-code">
+        <!-- IAT339 P1-Style_Guide_Template -->
+        <code>
+            &lt;section id="text_elements"&gt;<br>
+            &nbsp;&lt;div class="h2-border"&gt;<br>
+            &nbsp;&nbsp;&lt;h1&gt;Heading 1&lt;span&gt;32px&lt;/span&gt;&lt;/h1&gt;<br>
+            &nbsp;&lt;/div&gt;<br>
+            &lt;/section&gt;
+        </code>
+      </div>
+        </div>
+
+      </div>
+
+        <div class="container">
+        <h3>Paragraphs</h3>
+        <!-- https://www.lipsum.com/ -->
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+           since the 1500s, when an unknown printer took a galley of type and
+           scrambled it to make a type specimen book. It has survived not only
+           five centuries, but also the leap into electronic typesetting,
+           remaining essentially unchanged. It was popularised in the 1960s
+           with the release of Letraset sheets containing Lorem Ipsum passages,
+           and more recently with desktop publishing software like Aldus
+           PageMaker including versions of Lorem Ipsum.</p>
+
+           <div class="css-selector">
+           <h4>Css selector</h4>
+           <p>p</p>
+           <h4>Sample code</h4>
+             <div class="sample-code">
+           <!-- IAT339 P1-Style_Guide_Template -->
+           <code>
+               &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting
+                 industry.&lt;/p&gt;
+           </code>
+         </div>
+           </div>
+
+         </div>
+
+        <div class="container">
+          <div class="order-list">
+        <h3>Numbered Lists</h3>
+          <ol>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+          </ol>
+        </div>
+
+        <div class="css-selector">
+        <h4>Css selector</h4>
+        <p>.order-list</p>
+        <h4>Sample code</h4>
+          <div class="sample-code">
+        <!-- IAT339 P1-Style_Guide_Template -->
+        <code>
+          &lt;div class="order-list"&gt;<br>
+          &nbsp;&lt;ol&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;List Item 1&lt;/li&gt;<br>
+          &nbsp;&lt;/ol&gt;<br>
+          &lt;/div&gt;
+        </code>
+      </div>
+        </div>
+
+        </div>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <div class="container">
+        <div class="h2-border">
+      <h2>Combined Elements</h2>
+        </div>
+
+        <h3>Main Navigation</h3>
+        <div class="nav-box">
+          <section class="nav-link">
+        <nav class="main-nav">
+          <ul>
+          <li><a href="#">SHOP</a>
+            <ul>
+            <li><a href="#">NOTEBOOKS</a></li>
+            <li><a href="#">PLANNERS</a></li>
+            <li><a href="#">OTHERS</a></li></ul></li>
+          <li><a href="#">ABOUT</a><ul>
+          <li><a href="#">STORY</a></li>
+          <li><a href="#">HISTORY</a></li></ul></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">SEARCH</a></li>
+          <li><a href="#">LOGIN</a></li>
+        </ul>
+        </nav>
+      </section>
+          </div>
+
+          <div class="css-selector">
+          <h4>Css selector</h4>
+          <p>.nav-box, .nav-link, .main-nav</p>
+          <h4>Sample code</h4>
+            <div class="sample-code">
+          <!-- IAT339 P1-Style_Guide_Template -->
+          <code>
+          <!-- https://www.computerhope.com/issues/ch001662.htm#targetText=To%20create%20extra%20spaces%20before,following%20code%20in%20our%20HTML.&targetText=If%20you%20are%20using%20a,or%20editing%20the%20HTML%20code. -->
+              &lt;div class="nav-box"&gt;<br>
+              &nbsp;&lt;section class="nav-link"&gt;<br>
+            &nbsp;&nbsp;&lt;nav class="main-nav"&gt;<br>
+              &nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;SHOP&lt;/a&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#">NOTEBOOKS&lt;/a&gt;&lt;/li&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+                &nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+                &nbsp;&nbsp;&lt;/nav&gt;<br>
+                &nbsp;&lt;/section&gt;<br>
+                &lt;/div&gt;
+          </code>
+        </div>
+          </div>
+
+        </div>
+
+
+        <div class="container">
+        <h3>Payment Form</h3>
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio -->
+        <form>
+          <h4>Select payment method:</h4>
+          <div>
+            <label class="radiobutton">Credit Card
+              <input type="radio" checked="checked" name="payment-method" value="Credit-Card">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="radiobutton">Dedit Card
+              <input type="radio" checked="checked" name="payment-method" value="Debit-Card">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="radiobutton">Net Banking
+              <input type="radio" checked="checked" name="payment-method" value="Net-Banking">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="radiobutton">Paypal
+              <input type="radio" checked="checked" name="payment-method" value="Paypal">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="payment-form">
+            <input type="button" value = "Submit">
+          </div>
+        </form>
+        <div class="css-selector">
+        <h4>CSS selector</h4>
+        <p>.radiobutton, .checkmark, .payment-form</p>
+        <h4>Sample code</h4>
+          <div class="sample-code">
+        <!-- IAT339 P1-Style_Guide_Template -->
+        <code>
+            &lt;label class="radiobutton"&gt;Credit Card<br>
+            &nbsp;&lt;input type="radio" checked="checked" name="radio" value="Credit-Card"&gt;<br>
+            &nbsp;&lt;span class="checkmark">&lt;/span&gt;<br>
+            &lt;/label&gt;<br>
+            &lt;div class="payment-form"&gt;<br>
+            &nbsp;&lt;input type="button" value="Submit"&gt;<br>
+            &lt;/div&gt;
+        </code>
+      </div>
+        </div>
+
+      </div>
+</section>
+
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+    <section id="Basic_Branding_Ideas">
+      <div class="container">
+        <div class="h2-border">
+      <h2>Basic Branding Ideas</h2>
+    </div>
+          <h3>What does the company do, or offer?</h3>
+          <p>Our company mainly offers stationery based on paper products, such as notebooks, planner, etc. We also provides pencils, book clips and other affiliate products. Our company's value proposition is to produce simple, environmentally friendly and useful products with high quality, discard fussy, fancy or redundant designs, and at the same time, deliver a relaxed and comfortable atmosphere to our customers.</p>
+
+          <h3>Who is the company to potential customers? (as a person)?</h3>
+          <p>The customer segments our company mainly target are those aged 18 - 35, who have concern about environmental protection. Also, for those who get tired of dazzling and complicated design elements in the market, and pursue some simple, practical, and high-quality products, our company will be a good choice.</p>
+
+          <h3>Why might this company entice someone to purchase a product or service?</h3>
+          <p>One of the features of our company is that we use recycled paper to create all paper products. In most of the recycled paper, paper fibers are often lost in the washing process that separates ink from paper. So as you can see, our paper's brightness fades and presents the slightly yellowish hue. However, there is nothing difference from regular paper in the sense of experience. We are committed to finding out the most environmentally friendly materials to protect our customers and our environment. In addition, we actively involve our customers in the design process and help us create products that satisfy with their need. </p>
+        </div>
+    </section>
+
+    <section id="Brand_Components">
+      <div class="container">
+      <div class="h2-border">
+      <h2>Brand Components</h2>
+    </div>
+      <section>
+        <h3>Fonts</h3>
+        <h4>Headings</h4>
+          <div class="font">
+          <h4>Roboto - Black</h4>
+        </div>
+        <h4>Navigation and Paragraphs</h4>
+          <p>Roboto - Regular</p>
+
+      </section>
+
+      <section>
+        <h3>Colour palettes</h3>
+        <h4>Primary Colours</h4>
+        <div class="colour-box">
+          <img src="images/colour-header1.jpg" alt="header1 colour">
+          <img src="images/colour-header2.jpg" alt="header2 colour">
+          <img src="images/colour-header3.jpg" alt="header3 colour">
+          <img src="images/colour-header4.jpg" alt="header4 colour">
+          <h4>Paragraph and Visited Link Colours</h4>
+          <img src="images/colour-visitedLink.jpg" alt="visited link colour">
+          <img src="images/colour-para.jpg" alt="paragraph colour">
+          <h4>Background Colours</h4>
+          <img src="images/colour-headerbg.jpg" alt="header background colour">
+          <img src="images/colour-bodybg.jpg" alt="body background colour">
+          </div>
+      </section>
+
+      <section class="potential-image">
+        <h3>Potential imagery, and, or, art direction</h3>
+        <!-- http://jonathanploeg.nl/ -->
+          <img src="images/imagery.jpg" alt="two cups on the marble table">
+      </section>
+        </div>
+    </section>
+
+    <section id="citations">
+      <div class="container">
+      <h2>Citations</h2>
+      <nav class="main-nav">
+      <ul>
+        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>.
+          Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">
+            https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+      </ul>
+    </nav>
+    </div>
+    </section>
+
+  </body>
+</html>
