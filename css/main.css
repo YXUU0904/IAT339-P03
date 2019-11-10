@@ -450,15 +450,25 @@ input[type="button"]:active{
   margin-left: 20%;
   margin-right: 15%;
   margin-top: 20%;
-  margin-bottom:10%;
+  margin-bottom:5%;
 }
-.steps-logo{
-  margin-left: 20%;
-  margin-bottom:10%;
-}
+
 .steps-logo img{
-  max-width: 5%;
+  max-width: 100%;
   height: auto;
+}
+
+.steps-description{
+  display:flex;
+  align-items: flex-start;
+  margin-left: 20%;
+}
+.steps-title{
+  margin-left: 2%;
+}
+.steps-paragraph{
+  margin-left: 5%;
+  margin-right: 15%;
 }
 
 /*https://www.youtube.com/watch?v=RKL9Nkf1_N8*/
