@@ -19,19 +19,19 @@ header{
 
 h1{
   color: #655ba0;
-  font-size:32px;
+  font-size:40px;
 }
 h2{
   color: #7469b8;
-  font-size:26px;
+  font-size:32px;
 }
 h3{
   color: #8578d2;
-  font-size:21px;
+  font-size:26px;
 }
 h4{
   color: #a294f2;
-  font-size:17px;
+  font-size:21px;
 }
 .comment{
   display:none;
@@ -395,17 +395,20 @@ input[type="button"]:active{
 .navigation{
   position:fixed;
   top:4%;
-  left:1%;
+  left:2%;
 }
 .navigation li{
   margin-top: 10px;
-
 }
 .navigation a{
   text-decoration: none;
   color: #655ba0;
   font-weight: 600;
   font-size: 18px;
+}
+.navigation a:hover{
+  color: #cc8bad;
+  transition: 0.3s;
 }
 .logo{
   max-width: 23%;
@@ -418,6 +421,10 @@ input[type="button"]:active{
 }
 .home-intro h1{
   font-size: 50px;
+}
+.home-intro h2{
+  color: #655ba0;
+  font-size: 26px;
 }
 .work-list{
   display:flex;
@@ -465,6 +472,7 @@ input[type="button"]:active{
 }
 .steps-title{
   margin-left: 2%;
+
 }
 .steps-paragraph{
   margin-left: 5%;
