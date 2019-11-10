@@ -229,10 +229,36 @@ input[type="button"]:active{
   color: #655ba0;
   width:32em;
 }
-.overlay a:hover{
+.overlay img{
+  transition: 0.6s ease;
+}
+.overlay:hover img{
   opacity: 0.5;
   transition: .7s ease;
+  transform: scale(1.2);
+
 }
+/*https://codepen.io/lucy_wheel/pen/VxYzKP*/
+.image-box {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.image-box img {
+    max-width: 100%;
+    transition: all 1.3s;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+}
+
+.image-box:hover img {
+  opacity: 0.6;
+  transform: scale(1.15);
+}
+
+
 /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio*/
 .radiobutton{
  display: block;
@@ -402,7 +428,7 @@ input[type="button"]:active{
 .work-list1{
   margin-right: 30px;
 }
-.work-home-page{
+.image{
   max-width: 100%;
   height: auto;
 }
@@ -411,6 +437,28 @@ input[type="button"]:active{
   margin-right: 15%;
   margin-top: 25px;
   margin-bottom:20%;
+}
+.work-intro{
+  position:absolute;
+  left:20%;
+  top:20%;
+}
+.work-intro h1{
+  margin-bottom: 5%;
+}
+.work-final{
+  margin-left: 20%;
+  margin-right: 15%;
+  margin-top: 20%;
+  margin-bottom:10%;
+}
+.steps-logo{
+  margin-left: 20%;
+  margin-bottom:10%;
+}
+.steps-logo img{
+  max-width: 5%;
+  height: auto;
 }
 
 /*https://www.youtube.com/watch?v=RKL9Nkf1_N8*/
