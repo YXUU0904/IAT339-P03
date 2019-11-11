@@ -392,13 +392,30 @@ input[type="button"]:active{
 .font h4{
   color:#000;
 }
+.home-navigation{
+  position:fixed;
+  top:7%;
+  left:3%;
+}
+.side-bar-logo{
+  position:fixed;
+  top:37%;
+  left:3%;
+}
+.side-bar{
+  display:block;
+  max-width: 25%;
+  height:auto;
+  margin-bottom: 15px;
+
+}
 .navigation{
   position:fixed;
-  top:4%;
-  left:2%;
+  top:81%;
+  left:3%;
 }
 .navigation li{
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .navigation a{
   text-decoration: none;
@@ -413,16 +430,21 @@ input[type="button"]:active{
 .logo{
   max-width: 23%;
   height: auto;
+  margin-bottom:10px;
 }
 .home-intro{
   position:absolute;
   left:20%;
-  top:20%;
+  top:105%;
 }
 .home-intro h1{
   font-size: 50px;
+    margin-top: 30px;
+  margin-bottom: 40px;
 }
+
 .home-intro h2{
+
   color: #655ba0;
   font-size: 26px;
 }
@@ -431,6 +453,7 @@ input[type="button"]:active{
   margin-left: 20%;
   margin-right: 15%;
   margin-top: 25%;
+  margin-bottom: 10%;
 }
 .work-list1{
   margin-right: 30px;
@@ -442,43 +465,65 @@ input[type="button"]:active{
 .home-page-image{
   margin-left: 20%;
   margin-right: 15%;
-  margin-top: 25px;
+  margin-top: 4%;
   margin-bottom:20%;
 }
+.intro-box{
+  display:flex;
+  align-items: flex-start;
+}
 .work-intro{
-  position:absolute;
-  left:20%;
-  top:20%;
+  margin-left:20%;
 }
 .work-intro h1{
   margin-bottom: 5%;
+  max-width: 50%;
+  line-height: 45px;
+}
+.work-intro p{
+  margin-top: 10%;
+}
+.work-paragraph{
+  margin-left: 90px;
+  margin-right: 15%;
 }
 .work-final{
   margin-left: 20%;
   margin-right: 15%;
-  margin-top: 20%;
+  margin-top: 4%;
   margin-bottom:5%;
 }
 
-.steps-logo img{
-  max-width: 100%;
-  height: auto;
-}
-
-.steps-description{
-  display:flex;
-  align-items: flex-start;
-  margin-left: 20%;
+.steps{
+  display: flex;
+  margin-top: 8%;
 }
 .steps-title{
-  margin-left: 2%;
-
+  margin-left: 20%;
 }
-.steps-paragraph{
-  margin-left: 5%;
+
+
+.prob{
+    margin-left: 20%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+.sketch{
+  display:flex;
+  margin-top: 5%;
+}
+.sketch img{
+  max-width:30%;
+  height:auto;
+}
+.sketch1{
+  margin-left: 20%;
+  margin-right: 30px;
+}
+.sketch2{
   margin-right: 15%;
 }
-
 /*https://www.youtube.com/watch?v=RKL9Nkf1_N8*/
 @media screen and (max-width: 1024px) {
   .main-nav ul{
