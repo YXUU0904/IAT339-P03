@@ -442,17 +442,19 @@ input[type="button"]:active{
 .font h4{
   color:#000;
 }
+.sidebar{
+  position:fixed;
+  left:3%;
+}
 .home-navigation{
   position:fixed;
   top:6%;
-  left:3%;
+
 }
-.side-bar-logo{
-  position:fixed;
-  top:37%;
-  left:3%;
+.sidebar-logo{
+  margin-top:160%;
 }
-.side-bar{
+.sidebar-img{
   display:block;
   max-width: 25%;
   height:auto;
@@ -460,9 +462,7 @@ input[type="button"]:active{
 
 }
 .navigation{
-  position:fixed;
-  top:81%;
-  left:3%;
+  margin-top:160%;
 }
 .navigation li{
   margin-top: 5px;
@@ -480,7 +480,6 @@ input[type="button"]:active{
 .logo{
   max-width: 23%;
   height: auto;
-  margin-bottom:10%;
 }
 .body-container{
   margin-top: 3%;
@@ -555,6 +554,27 @@ input[type="button"]:active{
 .border{
    border:1px solid #000;
 }
+.show-menu-button, .hide-menu-button{
+  transition: 0.3s;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-button{
+  position:fixed;
+  bottom:5%;
+}
+
+.menu a:hover, .show-menu-button:hover,
+.hide-menu-button:hover{
+  color:#cc8bad;
+}
+
+#check{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
 @media screen and (max-width:1024px){
   .body-container{
     margin-top: 4%;
@@ -599,6 +619,49 @@ input[type="button"]:active{
       margin-top:5%;
       margin-left: 0;
     }
+    .show-menu-button, .hide-menu-button{
+      display: block;
+      color:#655ba0;
+    }
+    .sidebar{
+      z-index: 9999;
+    }
+    .menu{
+      /*https://www.w3schools.com/howto/howto_js_sidenav.asp*/
+      z-index: 9999;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #e8e8e8;
+      right: -100%;
+      top:0;
+      text-align: center;
+      margin-top: 0;
+      padding: 80px 0;
+      line-height: normal;
+      transition: 0.5s;
+    }
+    .menu a{
+      display: block;
+      padding: 25px;
+      padding-right: 43px;
+    }
+
+    .hide-menu-button{
+      position: absolute;
+      bottom:30px;
+      left: 25px;
+    }
+    #check:checked ~ .menu{
+      right:0;
+    }
+    #check{
+      display:none;
+    }
+    .logo{
+      max-width: 18%;
+      height: auto;
+    }
 }
 /*https://www.youtube.com/watch?v=RKL9Nkf1_N8*/
 @media screen and (max-width: 1024px) {
@@ -627,6 +690,7 @@ input[type="button"]:active{
   .nav-link{
     margin-bottom: 0;
   }
+
 }
 @media screen and (max-width: 645px) {
   .h2-border{

@@ -16,30 +16,43 @@
     <style>
     @import url('https://fonts.googleapis.com/css?family=Barlow:400,600,700&display=swap');
   </style>
+  <script src="https://kit.fontawesome.com/988349c995.js" crossorigin="anonymous"></script>
   </head>
 
 
   <body>
     <div class="body-container">
+      <div class="sidebar">
        <div class="home-navigation">
          <a href="home-page.html">
-          <img class="logo" src="images/YAO-newfont.png" alt="logo"></a>
+          <img class="logo" src="images/YAO-newfont.png" alt="logo">
        </div>
-       <div class="side-bar-logo">
-         <img class="side-bar" src="images/step1-logo.png" alt="logo">
-         <img class="side-bar" src="images/step2-logo.png" alt="logo">
-         <img class="side-bar" src="images/step3-logo.png" alt="logo">
-         <img class="side-bar" src="images/step4-logo.png" alt="logo">
+
+       <div class="sidebar-logo">
+         <img class="sidebar-img" src="images/step1-logo.png" alt="logo">
+         <img class="sidebar-img" src="images/step2-logo.png" alt="logo">
+         <img class="sidebar-img" src="images/step3-logo.png" alt="logo">
+         <img class="sidebar-img" src="images/step4-logo.png" alt="logo">
        </div>
 
        <div class="navigation">
-       <ul>
+         <input type="checkbox" id="check">
+         <label for="check" class="show-menu-button">
+           <!--https://fontawesome.com/icons/bars?style=solid-->
+           <!--https://stackoverflow.com/questions/12272372/how-to-style-icon-color-size-and-shadow-of-font-awesome-icons-->
+           <i class="fas fa-bars text-success"></i>
+         </label>
+       <ul class="menu">
         <li><a href=#>Work</a></li>
        <li><a href=#>About</a></li>
         <li><a href=#>Contact</a></li>
+        <li> <label for="check" class="hide-menu-button">
+           <!--https://fontawesome.com/icons/times?style=solid-->
+           <i class="fas fa-times text-success"></i>
+         </label></li>
       </ul>
     </div>
-
+</div>
        <div class="home-page-image image-box">
        <a href="work2.html">
         <img src="images/home-page.jpg" alt="logo"></a>
