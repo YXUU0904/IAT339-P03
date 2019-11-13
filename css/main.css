@@ -646,6 +646,29 @@ input[type="button"]:active{
       font-size: 20px;
       line-height:25px;
     }
+    .about-intro h1{
+      font-size: 35px;
+      margin-top:40%;
+      margin-bottom: 8%;
+    }
+
+    .about-intro h2{
+      color: #655ba0;
+      font-size: 20px;
+      line-height:25px;
+      margin-bottom: 10%;
+    }
+    .about-intro h3{
+      font-size: 15px;
+      line-height:22px;
+      margin-bottom: 13%;
+    }
+    .button-sub{
+      width:50%;
+    }
+    .work-paragraph{
+      line-height: 22px;
+    }
     .intro-box{
       display:block;
     }
