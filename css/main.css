@@ -452,7 +452,8 @@ input[type="button"]:active{
 
 }
 .sidebar-logo{
-  margin-top:160%;
+  position:fixed;
+  top:35%;
 }
 .sidebar-img{
   display:block;
@@ -462,7 +463,8 @@ input[type="button"]:active{
 
 }
 .navigation{
-  margin-top:160%;
+  position:fixed;
+  bottom:5%;
 }
 .navigation li{
   margin-top: 5px;
@@ -478,7 +480,7 @@ input[type="button"]:active{
   transition: 0.3s;
 }
 .logo{
-  max-width: 23%;
+  max-width: 22%;
   height: auto;
 }
 .body-container{
@@ -632,7 +634,7 @@ input[type="button"]:active{
       position: fixed;
       width: 100%;
       height: 100vh;
-      background: #e8e8e8;
+      background: #655ba0;
       right: -100%;
       top:0;
       text-align: center;
@@ -642,6 +644,7 @@ input[type="button"]:active{
       transition: 0.5s;
     }
     .menu a{
+      color:white;
       display: block;
       padding: 25px;
       padding-right: 43px;
@@ -649,8 +652,9 @@ input[type="button"]:active{
 
     .hide-menu-button{
       position: absolute;
+      color:white;
       bottom:30px;
-      left: 25px;
+      left: 20px;
     }
     #check:checked ~ .menu{
       right:0;
@@ -659,9 +663,13 @@ input[type="button"]:active{
       display:none;
     }
     .logo{
-      max-width: 18%;
+      max-width: 17%;
       height: auto;
     }
+    .sidebar-img{
+      max-width: 22%;
+    }
+
 }
 /*https://www.youtube.com/watch?v=RKL9Nkf1_N8*/
 @media screen and (max-width: 1024px) {
