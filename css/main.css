@@ -577,6 +577,47 @@ input[type="button"]:active{
   visibility: hidden;
   z-index: -1111;
 }
+.about-intro h1{
+    font-size: 50px;
+    margin-top: 20%;
+    margin-bottom: 3%;
+}
+.about-intro h2{
+  color: #655ba0;
+  font-size: 26px;
+  line-height:40px;
+  margin-bottom: 6%;
+}
+.about-intro h3{
+  color: #655ba0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height:30px;
+  margin-bottom: 6%;
+}
+.button-sub {
+    font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 25px;
+  display: inline-block;
+  width:25%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: white;
+  border:0;
+  background-color: #655ba0;
+  transition-duration: 0.5s;
+}
+
+.button-sub:hover {
+ background-color: #cc8bad;
+}
+
+.button-sub:focus{
+  background-color:#000;
+}
 @media screen and (max-width:1024px){
   .body-container{
     margin-top: 4%;
@@ -596,14 +637,14 @@ input[type="button"]:active{
       margin-right: 5%;
     }
     .home-intro h1{
-      font-size: 40px;
+      font-size: 35px;
       margin-bottom: 7%;
     }
 
     .home-intro h2{
       color: #655ba0;
       font-size: 20px;
-      line-height:30px;
+      line-height:25px;
     }
     .intro-box{
       display:block;
