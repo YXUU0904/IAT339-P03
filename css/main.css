@@ -239,55 +239,76 @@ input[type="button"]:hover{
 input[type="button"]:active{
   background-color: #909090;
 }
+.my-form{
+  color:#655ba0;
+}
+.my-form-label{
+  margin-bottom:1%;
+}
 /*https://codepen.io/lihs/pen/MEvzxr*/
 #first-name-input[type="text"]{
-  border: 1px solid #909090;
+  border-radius: 20px;
+  border: 1px solid #655ba0;
   display:block;
   opacity: 0.5;
-  width:32em;
-  margin-bottom: 20px;
+  width:80%;
+  height: 2em;
+  margin-bottom: 15px;
 }
 #first-name-input[type="text"]:focus{
+    border-radius: 20px;
   outline: none;
-  border: 1px solid #655ba0;
-  color: #655ba0;
-  width:32em;
+  border: 1px solid #cc8bad;
+  width:80%;
+  height: 2em;
 }
 #last-name-input[type="text"]{
-  border: 1px solid #909090;
+    border-radius: 20px;
+  border: 1px solid #655ba0;
   display:block;
   opacity: 0.5;
-  width:32em;
-  margin-bottom: 20px;
+  width:80%;
+  height: 2em;
+  margin-bottom: 15px;
 }
 #last-name-input[type="text"]:focus{
+    border-radius: 20px;
   outline: none;
-  border: 1px solid #655ba0;
-  color: #655ba0;
-  width:32em;
+  border: 1px solid #cc8bad;
+  width:80%;
+  height: 2em;
 }
-.my-form textarea{
-  padding-bottom: 50px;
-  border: 1px solid #909090;
+#email-input[type="email"]{
+    border-radius: 20px;
+  border: 1px solid #655ba0;
   display:block;
   opacity: 0.5;
-  width:32em;
+  width:80%;
+  height: 2em;
+  margin-bottom: 15px;
+}
+#email-input[type="email"]:focus{
+    border-radius: 20px;
+  outline: none;
+  border: 1px solid #cc8bad;
+  width:80%;
+  height: 2em;
+}
+.my-form textarea{
+    border-radius: 20px;
+  padding-bottom: 100px;
+  border: 1px solid #655ba0;
+  display:block;
+  opacity: 0.5;
+  width:80%;
 }
 .my-form textarea:focus{
+    border-radius: 20px;
   outline: none;
-  border: 2px solid #655ba0;
-  color: #655ba0;
-  width:32em;
+  border: 1px solid #cc8bad;
+  width:80%;
 }
-.overlay img{
-  transition: 0.6s ease;
-}
-.overlay:hover img{
-  opacity: 0.5;
-  transition: .7s ease;
-  transform: scale(1.2);
 
-}
 /*https://codepen.io/lucy_wheel/pen/VxYzKP*/
 .image-box {
     position: relative;
@@ -307,6 +328,7 @@ input[type="button"]:active{
   opacity: 0.6;
   transform: scale(1.15);
 }
+
 
 
 /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio*/
@@ -384,24 +406,6 @@ input[type="button"]:active{
   padding-right: 3.5em;
 }
 
-.image-flip{
-  width: 200px;
-  height: 260px;
-  position: relative;
-  display: inline-block;
-  margin: 0;
-}
-.image-flip .image-top{
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 99;
-}
-.image-flip:hover .image-top {
-  display: inline;
-  transition: .5s ease;
-}
 
 #Basic_Branding_Ideas{
   margin-top: 60px;
@@ -513,6 +517,10 @@ input[type="button"]:active{
 .home-page-image{
   margin-bottom:10%;
 }
+.home-page-image img{
+  max-width: 100%;
+  height: auto;
+}
 .intro-box{
   display:flex;
   align-items: flex-start;
@@ -593,10 +601,31 @@ input[type="button"]:active{
   font-weight: 400;
   font-size: 20px;
   line-height:30px;
-  margin-bottom: 6%;
+}
+.contact-info h1{
+    font-size: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.contact-info h3{
+    color: #655ba0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height:30px;
+}
+.contact-info a{
+    text-decoration: none;
+    color: #cc8bad;
+
+  }
+.contact-info a:hover{
+    color: #655ba0;
+  }
+.contact-box{
+    margin-top: 3%;
 }
 .button-sub {
-    font-size: 18px;
+  font-size: 18px;
   font-weight: 600;
   text-decoration: none;
   border-radius: 25px;
@@ -609,6 +638,7 @@ input[type="button"]:active{
   border:0;
   background-color: #655ba0;
   transition-duration: 0.5s;
+    margin-top: 5%;
 }
 
 .button-sub:hover {
@@ -618,6 +648,13 @@ input[type="button"]:active{
 .button-sub:focus{
   background-color:#000;
 }
+.contact_submit_button a{
+  color:white;
+}
+.contact_submit_button a:hover{
+  color:white;
+}
+
 @media screen and (max-width:1024px){
   .body-container{
     margin-top: 4%;
@@ -630,6 +667,13 @@ input[type="button"]:active{
     margin-right: 0;
     margin-bottom: 5%;
   }
+  .button-sub{
+    margin-top: 5%;
+  }
+  .contact-info h1{
+    margin-top:12%;
+  }
+}
   @media screen and (max-width:768px){
     .body-container{
       margin-top: 6%;
@@ -648,7 +692,7 @@ input[type="button"]:active{
     }
     .about-intro h1{
       font-size: 35px;
-      margin-top:40%;
+      margin-top:15%;
       margin-bottom: 8%;
     }
 
@@ -662,6 +706,15 @@ input[type="button"]:active{
       font-size: 15px;
       line-height:22px;
       margin-bottom: 13%;
+    }
+    .contact-info h1{
+      font-size: 28px;
+      margin-top:15%;
+      margin-bottom: 8%;
+    }
+    .contact-info h3{
+      font-size: 15px;
+      line-height:22px;
     }
     .button-sub{
       width:50%;
@@ -733,7 +786,74 @@ input[type="button"]:active{
     .sidebar-img{
       max-width: 22%;
     }
+    .my-form textarea{
+        border-radius: 20px;
+      padding-bottom: 50px;
+      border: 1px solid #655ba0;
+      display:block;
+      opacity: 0.5;
+      width:100%;
+    }
+    .my-form textarea:focus{
+        border-radius: 20px;
+      outline: none;
+      border: 1px solid #cc8bad;
+      width:100%;
+    }
+    #first-name-input[type="text"]{
+        border-radius: 20px;
+      border: 1px solid #655ba0;
+      display:block;
+      opacity: 0.5;
+      width:100%;
+      height: 2em;
+      margin-bottom: 15px;
+    }
 
+    #first-name-input[type="text"]:focus{
+      border-radius: 20px;
+      outline: none;
+      border: 1px solid #cc8bad;
+      width:100%;
+      height: 2em;
+    }
+    #last-name-input[type="text"]{
+        border-radius: 20px;
+      border: 1px solid #655ba0;
+      display:block;
+      opacity: 0.5;
+      width:100%;
+      height: 2em;
+      margin-bottom: 15px;
+    }
+    #last-name-input[type="text"]:focus{
+        border-radius: 20px;
+      outline: none;
+      border: 1px solid #cc8bad;
+      width:100%;
+      height: 2em;
+    }
+    #email-input[type="email"]{
+        border-radius: 20px;
+      border: 1px solid #655ba0;
+      display:block;
+      opacity: 0.5;
+      width:100%;
+      height: 2em;
+      margin-bottom: 15px;
+    }
+
+    #email-input[type="email"]:focus{
+        border-radius: 20px;
+      outline: none;
+      border: 1px solid #cc8bad;
+      width:100%;
+      height: 2em;
+    }
+    .button-sub{
+      width:100%;
+      margin-top: 5%;
+    }
 }
 /*https://www.youtube.com/watch?v=RKL9Nkf1_N8*/
 @media screen and (max-width: 1024px) {
@@ -768,24 +888,7 @@ input[type="button"]:active{
   .h2-border{
     width:99%;
   }
-  #first-name-input[type="text"]{
-    width:98%;
-  }
-  #first-name-input[type="text"]:focus{
-    width:98%;
-  }
-  #last-name-input[type="text"]{
-    width:98%;
-  }
-  #last-name-input[type="text"]:focus{
-    width:98%;
-  }
-  .my-form textarea{
-    width:98%;
-  }
-  .my-form textarea:focus{
-    width:98%;
-  }
+
   .colour-box img{
     max-width: 20%;
     height: auto;
