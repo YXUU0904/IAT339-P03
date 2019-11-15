@@ -560,12 +560,7 @@ input[type="button"]:active{
   margin-top: 5%;
 }
 .sketch{
-  display:flex;
   margin-top: 5%;
-}
-.sketch img{
-  max-width:50%;
-  height:auto;
 }
 
 .border{
