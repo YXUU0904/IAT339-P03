@@ -533,17 +533,25 @@ input[type="button"]:active{
 .work-intro p{
   margin-top: 10%;
 }
-.work-paragraph{
-  margin-left: 90px;
-}
-.work-final{
-  margin-bottom:5%;
-}
 
 .steps{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-top: 8%;
+}
+
+.steps-title {
+  flex-grow: 1;
+}
+
+.work-paragraph{
+  flex-grow: 2;
+  max-width: 66%;
+  /* margin-left: 90px; */
+}
+.work-final{
+  margin-bottom:5%;
 }
 .prob{
   margin-top: 5%;
