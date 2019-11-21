@@ -20,35 +20,43 @@
 
   <body>
     <!-- https://flexbox.ninja/demos/website-header/ -->
-    <header>
-     <div class="container">
-      <h1>Style Guide</h1>
-       <nav class="main-nav">
-         <ul>
-           <li><a href="#interactive_elements">Interactive Elements</a></li>
-           <li><a href="#text_elements">Text Elements</a></li>
-           <li><a href="#combined_elements">Combined Elements</a></li>
-           <li><a href="#citations">Citations</a></li>
-         </ul>
-       </nav>
-      </div>
-    </header>
+  <div class="body-container">
+    <div class="sidebar">
+     <div class="home-navigation">
+       <a href="home-page.html">
+        <img class="logo" src="images/YAO-newfont.png" alt="logo"></a>
+     </div>
+     <div class="sidebar-logo">
+       <img class="sidebar-img" src="images/step1-logo.png" alt="logo">
+       <img class="sidebar-img" src="images/step2-logo.png" alt="logo">
+       <img class="sidebar-img" src="images/step3-logo.png" alt="logo">
+       <img class="sidebar-img" src="images/step4-logo.png" alt="logo">
+     </div>
 
-    <section id="introduction">
-      <div class="container">
-        <div class="box1">
+     <div class="navigation">
+       <input type="checkbox" id="check">
+       <label for="check" class="show-menu-button">
+         <!--https://fontawesome.com/icons/bars?style=solid-->
+         <!--https://stackoverflow.com/questions/12272372/how-to-style-icon-color-size-and-shadow-of-font-awesome-icons-->
+         <i class="fas fa-bars text-success"></i>
+       </label>
+     <ul class="menu">
+       <li><a href="home-page.html"><div class="big">Portfolio</div></a></li>
+      <li><a href=#interactive_elements>Interactive Elements</a></li>
+      <li><a href=#combined_elements>Comined Elements</a></li>
+       <li><a href=#Brand_Components>Brand Components</a></li>
+      <li> <label for="check" class="hide-menu-button">
+         <!--https://fontawesome.com/icons/times?style=solid-->
+         <i class="fas fa-times text-success"></i>
+       </label></li>
+    </ul>
+  </div>
+  </div>
 
-        </div>
-        <!-- https://www.yelp.com/styleguide -->
-        <div class="box2">
-
-        </div>
-      </div>
-    </section>
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
     <section id="interactive_elements">
-      <div class="container">
+
         <div class="h2-border">
       <h2>Interactive Elements</h2>
     </div>
@@ -66,10 +74,8 @@
       </code>
     </div>
         </div>
-        </div>
 
       <!-- Default Button styling section -->
-      <div class="container">
         <section class="nav-link">
         <h3>Navigation Link</h3>
       <!-- https://css-tricks.com/solved-with-css-dropdown-menus/ -->
@@ -105,9 +111,7 @@
     </code>
   </div>
     </div>
-    </div>
 
-      <div class="container">
         <h3>Submit/Reset Buttons</h3>
         <input type="button" value = "Submit">
         <div class="css-selector">
@@ -121,10 +125,9 @@
         </code>
       </div>
         </div>
-      </div>
+
 
       <form class="my-form">
-        <div class="container">
         <h3>Text Input Field with Label</h3>
         <div>
         <label for="first-name-input">First Name</label>
@@ -162,11 +165,9 @@
         </div>
           </div>
       </div>
-    </div>
     </form>
 
 <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio -->
-  <div class="container">
         <h3>Radio Button with Label</h3>
         <label class="radiobutton">Choice 1
           <input type="radio" checked="checked" name="radio">
@@ -190,11 +191,9 @@
         </code>
       </div>
         </div>
-      </div>
 
-      <div class="container">
         <h3>Image as a Link</h3>
-        <div class="overlay">
+        <div class="image-box">
         <!-- https://www.presentandcorrect.com/collections/notes/products/1-2-sketch-book-->
         <a href=#>
           <!-- https://unsplash.com/photos/hObd9ohpXhE -->
@@ -213,14 +212,12 @@
         </code>
       </div>
         </div>
-      </div>
     </section>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
     <!-- TEXT ELEMENTS SECTION // -->
     <section id="text_elements">
-      <div class="container">
         <div class="h2-border">
         <h2>Text Elements</h2>
       </div>
@@ -246,9 +243,6 @@
       </div>
         </div>
 
-      </div>
-
-        <div class="container">
         <h3>Paragraphs</h3>
         <!-- https://www.lipsum.com/ -->
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -274,9 +268,6 @@
          </div>
            </div>
 
-         </div>
-
-        <div class="container">
           <div class="order-list">
         <h3>Numbered Lists</h3>
           <ol>
@@ -303,7 +294,6 @@
       </div>
         </div>
 
-        </div>
 
     </section>
     <!-- // TEXT ELEMENTS SECTION -->
@@ -312,7 +302,6 @@
 
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
-      <div class="container">
         <div class="h2-border">
       <h2>Combined Elements</h2>
         </div>
@@ -359,10 +348,6 @@
         </div>
           </div>
 
-        </div>
-
-
-       <div class="container">
          <div class="comment">
         <h3>Payment Form</h3>
         <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio -->
@@ -411,14 +396,14 @@
       </div>
         </div>
       </div>
-      </div>
+
 </section>
 
     <!-- // COMBINED ELEMENTS SECTION -->
 
     <section id="Basic_Branding_Ideas">
        <div class="comment">
-      <div class="container">
+
         <div class="h2-border">
       <h2>Basic Branding Ideas</h2>
     </div>
@@ -431,11 +416,11 @@
           <h3>Why might this company entice someone to purchase a product or service?</h3>
           <p>One of the features of our company is that we use recycled paper to create all paper products. In most of the recycled paper, paper fibers are often lost in the washing process that separates ink from paper. So as you can see, our paper's brightness fades and presents the slightly yellowish hue. However, there is nothing difference from regular paper in the sense of experience. We are committed to finding out the most environmentally friendly materials to protect our customers and our environment. In addition, we actively involve our customers in the design process and help us create products that satisfy with their need. </p>
         </div>
-      </div>
+
     </section>
 
     <section id="Brand_Components">
-      <div class="container">
+
       <div class="h2-border">
       <h2>Brand Components</h2>
     </div>
@@ -476,19 +461,8 @@
         </div>
     </section>
 
-    <section id="citations">
-      <div class="container">
-      <h2>Citations</h2>
-      <nav class="main-nav">
-      <ul>
-        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>.
-          Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">
-            https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
-        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
-      </ul>
-    </nav>
-    </div>
-    </section>
+
+
 
   </body>
 </html>

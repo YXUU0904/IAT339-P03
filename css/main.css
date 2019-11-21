@@ -65,22 +65,48 @@ li{
 header{
   color:#fff;
 }
-
+.big{
+  font-size:30px;
+  margin-bottom: 5%;
+}
 h1{
   color: #655ba0;
   font-size:40px;
+    margin-bottom:5%;
 }
 h2{
   color: #7469b8;
   font-size:32px;
+    margin-bottom:3%;
 }
 h3{
   color: #8578d2;
   font-size:26px;
+  margin-bottom:2%;
 }
 h4{
   color: #a294f2;
   font-size:21px;
+  margin-bottom:2%;
+}
+/*https://stackoverflow.com/questions/30855985/pure-css-animation-visibility-with-delay/30856455*/
+.fadein {
+  animation: 3s fadeIn;
+  animation-fill-mode: forwards;
+
+  visibility: hidden;
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 .comment{
   display:none;
@@ -132,6 +158,7 @@ h4{
   background-color: #655ba0;
   color: #ffffff;
   padding:0;
+    margin-top:0.5em;
 }
 
 #introduction{
@@ -157,11 +184,8 @@ h4{
 }
 
 .h2-border{
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  border-color: #7469b8;
   margin-left: 0;
-  width:25%;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 .in-text-link{
@@ -325,7 +349,7 @@ input[type="button"]:active{
 
 .image-box:hover img {
   opacity: 0.6;
-  transform: scale(1.15);
+  /*transform: scale(1.15);*/
 }
 
 
@@ -455,6 +479,7 @@ input[type="button"]:active{
 
 }
 .sidebar-logo{
+  visibility: hidden;
   position:fixed;
   top:35%;
 }
@@ -505,6 +530,11 @@ input[type="button"]:active{
 .work-list{
   display:flex;
   margin-top: 10%;
+}
+.work-list h3{
+  color: #655ba0;
+  margin-top: 5%;
+
 }
 .work-list1{
   margin-right: 30px;
@@ -675,22 +705,71 @@ input[type="button"]:active{
   .contact-info h1{
     margin-top:12%;
   }
+  .show-menu-button, .hide-menu-button{
+    display: block;
+    color:#655ba0;
+  }
+  .sidebar{
+    z-index: 9999;
+  }
+  .menu{
+    /*https://www.w3schools.com/howto/howto_js_sidenav.asp*/
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #655ba0;
+    right: -100%;
+    top:0;
+    text-align: center;
+    margin-top: 0;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.5s;
+  }
+  .menu a{
+    color:white;
+    display: block;
+    padding: 25px;
+    padding-right: 43px;
+  }
+
+  .hide-menu-button{
+    position: absolute;
+    color:white;
+    bottom:30px;
+    left: 20px;
+  }
+  #check:checked ~ .menu{
+    right:0;
+  }
+  #check{
+    display:none;
+  }
 }
   @media screen and (max-width:768px){
     .body-container{
       margin-top: 6%;
-      margin-left: 25%;
+      margin-left: 20%;
       margin-right: 5%;
+    }
+    .home-page-image{
+      display:none;
     }
     .home-intro h1{
       font-size: 35px;
       margin-bottom: 7%;
+      margin-top:15%;
     }
 
     .home-intro h2{
       color: #655ba0;
       font-size: 20px;
       line-height:25px;
+    }
+    .work-list h3{
+      color: #655ba0;
+      font-size: 18px;
     }
     .about-intro h1{
       font-size: 35px;
@@ -723,6 +802,7 @@ input[type="button"]:active{
     }
     .work-paragraph{
       line-height: 22px;
+      max-width: 100%;
     }
     .intro-box{
       display:block;
@@ -782,7 +862,7 @@ input[type="button"]:active{
       display:none;
     }
     .logo{
-      max-width: 17%;
+      max-width: 15%;
       height: auto;
     }
     .sidebar-img{
