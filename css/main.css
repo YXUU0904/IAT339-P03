@@ -62,37 +62,6 @@ h4{
 .comment{
   display:none;
 }
-/*https://www.youtube.com/watch?v=Wm6CUkswsNw*/
-.container{
-  width:90%;
-  margin: auto;
-  overflow: hidden;
-}
-
-.main-nav ul{
-  display:flex;
-  list-style: none;
-  padding-top: 0.5em;
-  padding-bottom: 1em;
-  padding-left: 0;
-}
-
-.main-nav ul li{
-  padding-right: 2em;
-}
-.main-nav a{
-  text-decoration: none;
-  color: #655ba0;
-}
-/*https://stackoverflow.com/questions/1734618/how-to-increase-the-gap-between-text-and-underlining-in-css/37622323#targetText=The%20problem%20with%20using%20border,don't%20have%20complete%20control.&targetText=By%20changing%20the%20bottom%20property,exactly%20where%20you%20want%20it.*/
-.main-nav a:hover{
-  color: #cc8bad;
-}
-/*
-.main-nav a:visited{
-  color: #909090;
-}
-*/
 .css-selector{
   width: 99%;
   margin-top:2em;
@@ -125,15 +94,6 @@ h4{
   margin-bottom: 1em;
 }
 
-#introduction h1{
-  color: #fff;
-}
-/*iat339 Week3 Lecture Notes*/
-#introduction .container{
-  display:flex;
-  align-items: flex-start;
-}
-
 .h2-border{
   margin-left: 0;
   margin-top: 30px;
@@ -146,60 +106,7 @@ h4{
 .in-text-link:hover{
   color: #cc8bad;
 }
-/*
-.in-text-link:visited{
-  color: #909090;
-}
-*/
-/*https://css-tricks.com/solved-with-css-dropdown-menus/*/
-.nav-link{
-  margin-bottom: 9em;
-}
-.nav-link ul{
-  list-style: none;
-  padding-left: 0;
-}
-.nav-link li{
-  display:block;
-  float:left;
-  transition-duration: 0.5s;
-}
-.nav-link li:hover {
-  cursor: pointer;
-}
-.nav-link ul li ul {
-  font-size: 14px;
-  visibility: hidden;
-  opacity: 0;
-  min-width: 5rem;
-  position: absolute;
-  padding-top: 0.5rem;
-  transition: all 0.5s ease;
-  display: none;
-}
 
-.nav-link ul li:hover > ul, ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-.nav-link ul li ul li {
-  clear: both;
-  width: 100%;
-}
-.nav-link a{
-  text-decoration: none;
-  color: #655ba0;
-}
-.nav-link a:hover{
-  color: #cc8bad;
-}
-/*
-.nav-link a:visited{
-  color: #909090;
-}
-*/
 input[type="button"]{
   background-color: #655ba0;
   color: #f9f6ef;
@@ -422,28 +329,15 @@ input[type="button"]:active{
 }
 .sidebar{
   position:fixed;
-  left:3%;
+  left:2%;
 }
 .home-navigation{
   position:fixed;
-  top:6%;
-
-}
-.sidebar-logo{
-  visibility: hidden;
-  position:fixed;
-  top:35%;
-}
-.sidebar-img{
-  display:block;
-  max-width: 25%;
-  height:auto;
-  margin-bottom: 15px;
-
+  top:1%;
 }
 .navigation{
   position:fixed;
-  bottom:5%;
+  top:13%;
 }
 .navigation li{
   margin-top: 5px;
@@ -459,13 +353,13 @@ input[type="button"]:active{
   transition: 0.3s;
 }
 .logo{
-  max-width: 22%;
+  max-width: 18%;
   height: auto;
 }
 .body-container{
   margin-top: 3%;
-  margin-left: 20%;
-  margin-right: 15%;
+  margin-left: 15%;
+  margin-right: 8%;
   margin-bottom: 5%;
 }
 .home-intro h1{
@@ -552,8 +446,8 @@ input[type="button"]:active{
   display: none;
 }
 .show-menu-button{
-  position:fixed;
-  bottom:5%;
+  margin-top: 32px;
+  float: right;
 }
 
 .menu a:hover, .show-menu-button:hover,
@@ -814,9 +708,7 @@ input[type="button"]:active{
       max-width: 15%;
       height: auto;
     }
-    .sidebar-img{
-      max-width: 22%;
-    }
+
     .my-form textarea{
         border-radius: 20px;
       padding-bottom: 50px;
