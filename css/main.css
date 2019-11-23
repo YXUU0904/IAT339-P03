@@ -332,11 +332,9 @@ input[type="button"]:active{
   left:2%;
 }
 .home-navigation{
-  position:fixed;
   top:1%;
 }
 .navigation{
-  position:fixed;
   top:13%;
 }
 .navigation li{
@@ -445,10 +443,6 @@ input[type="button"]:active{
   cursor: pointer;
   display: none;
 }
-.show-menu-button{
-  margin-top: 32px;
-  float: right;
-}
 
 .menu a:hover, .show-menu-button:hover,
 .hide-menu-button:hover{
@@ -548,59 +542,25 @@ input[type="button"]:active{
   .contact-info h1{
     margin-top:12%;
   }
-  .show-menu-button, .hide-menu-button{
-    display: block;
-    color:#655ba0;
-  }
-  .sidebar{
-    z-index: 9999;
-  }
-  .menu{
-    /*https://www.w3schools.com/howto/howto_js_sidenav.asp*/
-    z-index: 9999;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #655ba0;
-    right: -100%;
-    top:0;
-    text-align: center;
-    margin-top: 0;
-    padding: 80px 0;
-    line-height: normal;
-    transition: 0.5s;
-  }
-  .menu a{
-    color:white;
-    display: block;
-    padding: 25px;
-    padding-right: 43px;
-  }
-
-  .hide-menu-button{
-    position: absolute;
-    color:white;
-    bottom:30px;
-    left: 20px;
-  }
-  #check:checked ~ .menu{
-    right:0;
-  }
-  #check{
-    display:none;
-  }
 }
   @media screen and (max-width:768px){
+    .sidebar{
+      position:static;
+    }
+    .home-navigation{
+      float:left;
+    }
+    .navigation{
+      float:right;
+    }
     .body-container{
-      margin-top: 6%;
-      margin-left: 20%;
-      margin-right: 5%;
+      margin-left: 7%;
+      margin-right: 7%;
     }
     .home-page-image{
       display:none;
     }
     .home-intro h1{
-      font-size: 35px;
       margin-bottom: 7%;
       margin-top:15%;
     }
@@ -666,9 +626,6 @@ input[type="button"]:active{
     .show-menu-button, .hide-menu-button{
       display: block;
       color:#655ba0;
-    }
-    .sidebar{
-      z-index: 9999;
     }
     .menu{
       /*https://www.w3schools.com/howto/howto_js_sidenav.asp*/
@@ -777,52 +734,4 @@ input[type="button"]:active{
       width:100%;
       margin-top: 5%;
     }
-}
-/*https://www.youtube.com/watch?v=RKL9Nkf1_N8*/
-@media screen and (max-width: 1024px) {
-  .main-nav ul{
-    flex-direction: column;
-    margin-bottom: 0;
-  }
-  .main-nav ul li {
-    text-align: center;
-    margin-bottom: 1em;
-    width:100%;
-  }
-  .nav-box{
-    justify-content: center;
-  }
-  .nav-box ul{
-    flex-direction: column;
-  }
-  .nav-box ul li {
-    text-align: center;
-    margin-bottom: 2em;
-  }
-  .nav-box ul li ul li{
-    display: none;
-  }
-  .nav-link{
-    margin-bottom: 0;
-  }
-
-}
-@media screen and (max-width: 645px) {
-  .h2-border{
-    width:99%;
-  }
-
-  .colour-box img{
-    max-width: 20%;
-    height: auto;
-  }
-  .potential-image img{
-    max-width: 100%;
-    height:auto;
-  }
-}
-@media screen and (min-width: 750px){
-  #interactive_elements img{
-    width:50%;
-  }
 }
