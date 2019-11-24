@@ -332,10 +332,11 @@ input[type="button"]:active{
   left:2%;
 }
 .home-navigation{
-  top:1%;
+  top:-10%;
 }
+
 .navigation{
-  top:13%;
+  margin-top: 20px;
 }
 .navigation li{
   margin-top: 5px;
@@ -351,7 +352,7 @@ input[type="button"]:active{
   transition: 0.3s;
 }
 .logo{
-  max-width: 18%;
+  max-width: 15%;
   height: auto;
 }
 .body-container{
@@ -545,13 +546,12 @@ input[type="button"]:active{
 }
   @media screen and (max-width:768px){
     .sidebar{
-      position:static;
-    }
-    .home-navigation{
-      float:left;
+      position:relative;
     }
     .navigation{
-      float:right;
+      position:absolute;
+      right:3%;
+      top:10%;
     }
     .body-container{
       margin-left: 7%;
@@ -652,8 +652,8 @@ input[type="button"]:active{
     .hide-menu-button{
       position: absolute;
       color:white;
-      bottom:30px;
-      left: 20px;
+      top: 5%;
+      right:8%;
     }
     #check:checked ~ .menu{
       right:0;
@@ -661,11 +661,6 @@ input[type="button"]:active{
     #check{
       display:none;
     }
-    .logo{
-      max-width: 15%;
-      height: auto;
-    }
-
     .my-form textarea{
         border-radius: 20px;
       padding-bottom: 50px;
