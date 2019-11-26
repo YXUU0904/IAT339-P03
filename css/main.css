@@ -78,7 +78,7 @@ h4{
   background-color: #655ba0;
   color: #ffffff;
   padding:0;
-    margin-top:0.5em;
+  margin-top:0.5em;
 }
 
 #introduction{
@@ -198,7 +198,7 @@ input[type="button"]:active{
 }
 .image-box img {
     max-width: 100%;
-    transition: all 1.3s;
+    transition: all 1s;
     display: block;
     width: 100%;
     height: auto;
@@ -206,11 +206,106 @@ input[type="button"]:active{
 }
 
 .image-box:hover img {
-  opacity: 0.6;
-  /*transform: scale(1.15);*/
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+/*https://miketricking.github.io/bootstrap-image-hover/*/
+.work-list1 .hover-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+.work-list1 h2{
+  text-align: center;
+  font-size: 25px;
+  color:#fff;
 }
 
+.work-list1 a.hover-info {
+  display: inline-block;
+  text-decoration: none;
+  padding-left:22px;
+  padding-right:22px;
+  padding-top:100px;
+  padding-bottom:100px;
+  border: 1px solid #655ba0;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 22px;
+  border-radius: 50%;
+  background-color: #655ba0;
+  opacity:0.3;
+}
 
+.work-list1 a.hover-info:hover {
+  box-shadow: 0 0 5px #655ba0;
+}
+.work-list1 a.hover-info {
+  transform: scale(0.7);
+  transition: all .5s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #fff;
+}
+
+.work-list1:hover a.hover-info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  transform: scale(1);
+}
+
+.work-list2 .hover-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+.work-list2 h2{
+  text-align: center;
+  font-size: 25px;
+  color:#fff;
+  display: block;
+}
+
+.work-list2 a.hover-info {
+  display: inline-block;
+  text-decoration: none;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:100px;
+  padding-bottom:100px;
+  border: 1px solid #655ba0;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
+  background-color: #655ba0;
+  opacity:0.3;
+}
+
+.work-list2 a.hover-info:hover {
+  box-shadow: 0 0 5px #655ba0;
+}
+.work-list2 a.hover-info {
+  transform: scale(0.7);
+  transition: all .5s ease-in;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #fff;
+}
+
+.work-list2:hover a.hover-info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  transform: scale(1);
+}
 
 /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_radio*/
 .radiobutton{
@@ -330,13 +425,7 @@ input[type="button"]:active{
 .sidebar{
   position:fixed;
   left:2%;
-}
-.home-navigation{
-  top:-10%;
-}
-
-.navigation{
-  margin-top: 20px;
+  top:3%;
 }
 .navigation li{
   margin-top: 5px;
@@ -349,11 +438,33 @@ input[type="button"]:active{
 }
 .navigation a:hover{
   color: #cc8bad;
-  transition: 0.3s;
+  transition: 0.2s;
+  /*https://paulund.co.uk/how-to-create-a-pure-css-glow-text-on-hover*/
+   text-shadow: 0 0 1px #cc8bad;
 }
 .logo{
   max-width: 15%;
   height: auto;
+}
+.footer{
+  font-size:8px;
+  position:fixed;
+  left:2%;
+  bottom:6%;
+}
+.footer-link{
+  margin-top:5px;
+  font-size:11px;
+  line-height:17px;
+}
+.footer-link a{
+  text-decoration: none;
+  color: #655ba0;
+}
+.footer-link a:hover{
+  color: #cc8bad;
+  transition: 0.2s;
+  text-shadow: 0 0 1px #cc8bad;
 }
 .body-container{
   margin-top: 3%;
@@ -422,7 +533,6 @@ input[type="button"]:active{
 .work-paragraph{
   flex-grow: 2;
   max-width: 66%;
-  /* margin-left: 90px; */
 }
 .work-final{
   margin-bottom:5%;
@@ -457,7 +567,7 @@ input[type="button"]:active{
 }
 .about-intro h1{
     font-size: 50px;
-    margin-top: 20%;
+    margin-top:15%;
     margin-bottom: 3%;
 }
 .about-intro h2{
@@ -474,7 +584,7 @@ input[type="button"]:active{
 }
 .contact-info h1{
     font-size: 50px;
-    margin-top: 5%;
+    margin-top: 18%;
     margin-bottom: 5%;
 }
 .contact-info h3{
@@ -483,16 +593,26 @@ input[type="button"]:active{
     font-size: 20px;
     line-height:30px;
 }
-.contact-info a{
+.contact-info h3 a{
     text-decoration: none;
     color: #cc8bad;
-
   }
-.contact-info a:hover{
+.contact-info h3 a:hover{
+    color: #000;
+  }
+.contact_social_media_logo a{
     color: #655ba0;
-  }
+}
+.contact_social_media_logo a:hover{
+    color: #cc8bad;
+}
+
 .contact-box{
     margin-top: 3%;
+}
+.contact_social_media_logo i {
+  font-size: 32px;
+  padding-right: 40px;
 }
 .button-sub {
   font-size: 18px;
@@ -513,21 +633,16 @@ input[type="button"]:active{
 
 .button-sub:hover {
  background-color: #cc8bad;
+ box-shadow: 0 0 5px #cc8bad;
 }
 
 .button-sub:focus{
   background-color:#000;
 }
-.contact_submit_button a{
-  color:white;
-}
-.contact_submit_button a:hover{
-  color:white;
-}
+
 
 @media screen and (max-width:1024px){
   .body-container{
-    margin-top: 4%;
     margin-right: 10%;
   }
   .work-list{
@@ -547,11 +662,29 @@ input[type="button"]:active{
   @media screen and (max-width:768px){
     .sidebar{
       position:relative;
+      margin-left: 5%;
+      margin-right: 5%;
     }
     .navigation{
       position:absolute;
       right:3%;
-      top:10%;
+      top:30%;
+    }
+    .footer{
+      display: flex;
+      justify-content: space-between;
+      position:static;
+      margin-left: 7%;
+      margin-right:7%;
+      margin-bottom:5%;
+      font-size: 11px;
+    }
+    .footer-link{
+      display: flex;
+      font-size: 10px;
+    }
+    .footer-link a{
+      padding-left: 9px;
     }
     .body-container{
       margin-left: 7%;
@@ -562,7 +695,8 @@ input[type="button"]:active{
     }
     .home-intro h1{
       margin-bottom: 7%;
-      margin-top:15%;
+      margin-top:10%;
+      font-size:38px;
     }
 
     .home-intro h2{
@@ -589,7 +723,7 @@ input[type="button"]:active{
     .about-intro h3{
       font-size: 15px;
       line-height:22px;
-      margin-bottom: 13%;
+      margin-bottom: 5%;
     }
     .contact-info h1{
       font-size: 28px;
@@ -652,8 +786,18 @@ input[type="button"]:active{
     .hide-menu-button{
       position: absolute;
       color:white;
-      top: 5%;
-      right:8%;
+      top: 3%;
+      right:7%;
+    }
+    .work-list1 a.hover-info {
+      margin-top: 6px;
+    }
+    .work-list2 a.hover-info {
+      margin-top: 6px;
+    }
+    .contact_social_media_logo{
+      margin-top: 5%;
+      margin-bottom: 20%;
     }
     #check:checked ~ .menu{
       right:0;
@@ -728,5 +872,6 @@ input[type="button"]:active{
     .button-sub{
       width:100%;
       margin-top: 5%;
+      margin-bottom: 10%;
     }
 }
