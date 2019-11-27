@@ -225,17 +225,13 @@ input[type="button"]:active{
   color:#fff;
 }
 
-.work-list1 a.hover-info {
+.hover-info {
+  margin: 0 auto;
   display: inline-block;
   text-decoration: none;
-  padding-left:22px;
-  padding-right:22px;
-  padding-top:100px;
-  padding-bottom:100px;
-  border: 1px solid #655ba0;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 22px;
+  height:230px;
+  width:230px;
+
   border-radius: 50%;
   background-color: #655ba0;
   opacity:0.3;
@@ -582,6 +578,9 @@ input[type="button"]:active{
   font-size: 20px;
   line-height:30px;
 }
+.content-padding{
+  margin-bottom: 50%;
+}
 .contact-info h1{
     font-size: 50px;
     margin-top: 18%;
@@ -870,7 +869,6 @@ input[type="button"]:active{
       height: 2em;
     }
     .button-sub{
-      width:100%;
       margin-top: 5%;
       margin-bottom: 10%;
     }
