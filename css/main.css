@@ -66,7 +66,6 @@ h4{
 
 #introduction{
   /*https://www.w3schools.com/cssref/css3_pr_background-size.asp*/
-  /*https://www.pexels.com/photo/green-pine-trees-covered-with-fogs-under-white-sky-during-daytime-167699/*/
   background:url('../images/home-page.jpg');
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -379,20 +378,27 @@ input[type="button"]:active{
 #Brand_Components{
   margin-top: 60px;
 }
-
-#citations{
-  color:#9b9fa5;
-  margin-top: 30px;
-  border-top: 2px solid #655ba0;
+#citation_list{
+  margin-top: 5%;
 }
-#citations ul{
-  list-style: none;
-  padding-left:0;
+#citation_list ul li{
+  display: block;
+}
+#citation_list h2{
   margin-bottom: 30px;
 }
-#citations li{
-  display: block;
-  padding-top: 0;
+#citation_list p{
+  display: list-item;
+  list-style-type: disc;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+   list-style-position: inside;
+}
+#citation_list a{
+  text-decoration: none;
+  color: #655ba0;
+}
+#citation_list a:hover{
+  color: #cc8bad;
+  transition: 0.2s;
 }
 .font h4{
   color:#000;
@@ -494,13 +500,32 @@ input[type="button"]:active{
   margin-top: 10%;
 }
 
-.steps{
+.work1 .steps{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 8%;
 }
-
+.work2 .steps{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.work2-img-margin{
+    margin-top: 5%;
+}
+.work2-margin{
+  margin-top: 8%;
+}
+.work2 .prob{
+  margin-top: 0;
+}
+.work2-typeface-margin{
+  margin-top: 3%;
+}
+.work2 .final{
+  margin-top: 0;
+}
 .steps-title {
   flex-grow: 1;
 }
@@ -557,9 +582,7 @@ input[type="button"]:active{
   font-size: 20px;
   line-height:30px;
 }
-.content-padding{
-  margin-bottom: 60%;
-}
+
 .contact-info h1{
     font-size: 50px;
     margin-top: 18%;
@@ -659,6 +682,16 @@ input[type="button"]:active{
 }
 
   @media screen and (max-width:768px){
+    .order-list{
+      margin-left: 5%;
+    }
+    .contact_social_media_logo i {
+      font-size: 25px;
+      padding-right: 25px;
+    }
+    .content-padding{
+      margin-bottom: 60%;
+    }
     .sidebar{
       position:relative;
       margin-left: 5%;
@@ -756,10 +789,17 @@ input[type="button"]:active{
     .work-intro p{
       margin-top:5%;
     }
-    .steps{
+    .work1 .steps{
       display:block;
     }
-    .work-paragraph{
+    .work2 .steps{
+      display:block;
+    }
+    .work1 .work-paragraph{
+      margin-top:5%;
+      margin-left: 0;
+    }
+    .work2 .work-paragraph{
       margin-top:5%;
       margin-left: 0;
     }
@@ -871,6 +911,9 @@ input[type="button"]:active{
     }
     .button-sub{
       margin-top: 5%;
+      margin-bottom: 10%;
+    }
+    #citation_list{
       margin-bottom: 10%;
     }
 }
