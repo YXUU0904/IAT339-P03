@@ -209,6 +209,7 @@ input[type="button"]:active{
   opacity: 0.5;
   transform: scale(1.1);
 }
+
 /*https://miketricking.github.io/bootstrap-image-hover/*/
 .work-list1 .hover-text {
   width: 100%;
@@ -223,18 +224,21 @@ input[type="button"]:active{
   text-align: center;
   font-size: 25px;
   color:#fff;
+  margin-top: 35%;
 }
 
-.hover-info {
-  margin: 0 auto;
+.work-list1 a.hover-info {
   display: inline-block;
   text-decoration: none;
-  height:230px;
-  width:230px;
-
+  position: relative;
+  width: 50%;
+  height:80%;
+  border: 1px solid #655ba0;
   border-radius: 50%;
+  margin-top: 6%;
   background-color: #655ba0;
   opacity:0.3;
+
 }
 
 .work-list1 a.hover-info:hover {
@@ -268,22 +272,21 @@ input[type="button"]:active{
   font-size: 25px;
   color:#fff;
   display: block;
+  margin-top: 35%;
 }
 
 .work-list2 a.hover-info {
   display: inline-block;
   text-decoration: none;
-  padding-left:10px;
-  padding-right:10px;
-  padding-top:100px;
-  padding-bottom:100px;
+  position: relative;
+  width: 50%;
+  height:80%;
   border: 1px solid #655ba0;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 20px;
   border-radius: 50%;
+  margin-top: 6%;
   background-color: #655ba0;
   opacity:0.3;
+
 }
 
 .work-list2 a.hover-info:hover {
@@ -579,7 +582,7 @@ input[type="button"]:active{
   line-height:30px;
 }
 .content-padding{
-  margin-bottom: 50%;
+  margin-bottom: 60%;
 }
 .contact-info h1{
     font-size: 50px;
@@ -651,6 +654,16 @@ input[type="button"]:active{
     margin-right: 0;
     margin-bottom: 5%;
   }
+  .work-list2{
+    margin-right: 0;
+    margin-bottom: 5%;
+  }
+  .work-list1 h2{
+    margin-top: 40%;
+  }
+  .work-list2 h2{
+    margin-top: 40%;
+  }
   .button-sub{
     margin-top: 5%;
   }
@@ -706,6 +719,13 @@ input[type="button"]:active{
     .work-list h3{
       color: #655ba0;
       font-size: 18px;
+    }
+    .work-list1 h2{
+      font-size: 23px;
+    }
+    .work-list2 h2{
+      font-size: 23px;
+      margin-top:32%;
     }
     .about-intro h1{
       font-size: 35px;
@@ -787,12 +807,6 @@ input[type="button"]:active{
       color:white;
       top: 3%;
       right:7%;
-    }
-    .work-list1 a.hover-info {
-      margin-top: 6px;
-    }
-    .work-list2 a.hover-info {
-      margin-top: 6px;
     }
     .contact_social_media_logo{
       margin-top: 5%;
