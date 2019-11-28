@@ -10,16 +10,16 @@ body{
   color:BLACK;
   line-height: 1.6em;
 }
-li{
+ul li{
   list-style: none;
+}
+.order-list{
+  margin-left: 1.5%;
 }
 header{
   color:#fff;
 }
-.big{
-  font-size:30px;
-  margin-bottom: 5%;
-}
+
 h1{
   color: #655ba0;
   font-size:40px;
@@ -40,28 +40,11 @@ h4{
   font-size:21px;
   margin-bottom:2%;
 }
-/*https://stackoverflow.com/questions/30855985/pure-css-animation-visibility-with-delay/30856455*/
-.fadein {
-  animation: 3s fadeIn;
-  animation-fill-mode: forwards;
 
-  visibility: hidden;
-}
-
-
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
-  }
-}
 .comment{
   display:none;
 }
+
 .css-selector{
   width: 99%;
   margin-top:2em;
@@ -98,13 +81,6 @@ h4{
   margin-left: 0;
   margin-top: 30px;
   margin-bottom: 30px;
-}
-.in-text-link{
-  text-decoration: none;
-  color: #655ba0;
-}
-.in-text-link:hover{
-  color: #cc8bad;
 }
 
 input[type="button"]{
@@ -641,7 +617,17 @@ input[type="button"]:active{
 .button-sub:focus{
   background-color:#000;
 }
+.in-text-link{
+  text-decoration: none;
+  color: #cc8bad;
+}
+.in-text-link:hover{
+  color: #000;
+}
 
+.sg-image h2{
+  margin-top:45%;
+}
 
 @media screen and (max-width:1024px){
   .body-container{
@@ -671,6 +657,7 @@ input[type="button"]:active{
     margin-top:12%;
   }
 }
+
   @media screen and (max-width:768px){
     .sidebar{
       position:relative;
